@@ -11,7 +11,7 @@ git clone https://github.com/KroftyOpez/laravel-api.loc.git
  ```
 3. Скопируйте файл .env.example в .env
 ```sh
-cp .env.example .env
+copy .env.example .env
 ```
 4. Сгенерируйте ключ шифрования
 ```sh
