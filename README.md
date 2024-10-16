@@ -2,7 +2,7 @@
 1. Склонируйте репозиторий
 ```sh
 cd domains
-git clone https://github.com/Krofty_Opez/laravel-api.loc.git
+git clone https://github.com/KroftyOpez/laravel-api.loc.git
 ```
 2. Перейдите в папку с проектом и установите composer-зависимости
 ```sh
@@ -11,7 +11,7 @@ git clone https://github.com/Krofty_Opez/laravel-api.loc.git
  ```
 3. Скопируйте файл .env.example в .env
 ```sh
-cp .env.example .env
+copy .env.example .env
 ```
 4. Сгенерируйте ключ шифрования
 ```sh
