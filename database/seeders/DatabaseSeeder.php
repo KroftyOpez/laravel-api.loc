@@ -16,14 +16,38 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        Role::create([
+        $role_user = Role::create([
             'name' => 'Пользователь',
             'code' => 'user',
         ]);
 
-        Role::create([
+        $role_admin = Role::create([
             'name' => 'Администратор',
             'code' => 'admin',
+        ]);
+        User::create([
+           'surname' => 'Евсеев',
+           'name' => 'Дмитрий',
+           'patronymic' => 'Витальевич',
+            'sex' => 1,
+            'birthday' => '2005-11-04',
+            'login' => 'krofpoi',
+            'email' => 'krofpoi@gmail.com',
+            'password' => 'krofpoi',
+            'api_token' => null,
+            'role_id' => $role_admin->id,
+        ]);
+        User::create([
+            'surname' => 'Мотов',
+            'name' => 'Алибала',
+            'patronymic' => 'Эльманович',
+            'sex' => 1,
+            'birthday' => '2005-01-27',
+            'login' => 'noway',
+            'email' => 'unilajar@gmail.com',
+            'password' => 'noway',
+            'api_token' => null,
+            'role_id' => $role_admin->id,
         ]);
     }
 }
